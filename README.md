@@ -1,5 +1,9 @@
 # C++ | Google Test | Gcov | Lcov
 
+This repository demonstrates how to get coverage results with Google Test.
+
+The CMake flag `set(CMAKE_CXX_FLAGS --coverage)` does the main job.
+
 ## Build instructions
 
 ```shell script

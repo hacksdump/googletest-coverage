@@ -3,4 +3,4 @@ project(gtest_coverage)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(gtest_coverage main.cpp)
+add_executable(gtest_coverage main.cpp src/testsubject.cpp)

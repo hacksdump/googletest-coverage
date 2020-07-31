@@ -3,6 +3,9 @@ project(gtest_coverage)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(CMAKE_CXX_FLAGS "-g -O0 -Wall -fprofile-arcs -ftest-coverage")
+set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE 1)
+
 # Reference: https://github.com/google/googletest/tree/master/googletest#incorporating-into-an-existing-cmake-project
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)

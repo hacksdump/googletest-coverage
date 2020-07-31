@@ -36,10 +36,6 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
     include_directories("${gtest_SOURCE_DIR}/include")
 endif ()
 
-# Now simply link against gtest or gtest_main as needed.
-include_directories(cmake-build-debug/googletest-src/googlemock/include)
-include_directories(cmake-build-debug/googletest-src/googletest/include)
-
 set(SOURCE_FILES src/testsubject.cpp)
 add_executable(main main.cpp ${SOURCE_FILES})
 
